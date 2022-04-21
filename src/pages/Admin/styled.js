@@ -73,6 +73,5 @@ color: var(--shade-1);
     margin-bottom: 10px;
  }
 }
-
 `
 
