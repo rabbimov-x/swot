@@ -11,6 +11,29 @@ background-color: var(--shade-5);
      width: 100%;
      height: fit-content;
      overflow-x: auto;
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+     .back-imag{
+         position: absolute;
+         width: 50%;
+         height: auto;
+         top: 0;
+         min-width: 800px;
+         z-index: 1;
+         opacity: 0.25;
+         div{
+             width: 100%;
+         }
+
+         &  img{
+             width: 100%;
+             height: auto;
+             z-index: 1;
+         }
+     }
      
     @media (max-width: 800px) {
         overflow-x: auto; 
@@ -26,6 +49,24 @@ background-color: var(--shade-5);
         background-color: #F5F7FB;
         border-radius: 8px;
     } 
+    }
+ }
+ .bottom-view{
+    height : 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--info-dark);
+    .view-in{
+        width: 82.3%;
+        height: 10px;
+        border-radius: 10px 10px 0 0;
+        background-color: #E0F5DA;
     }
  }
 `

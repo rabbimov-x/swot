@@ -4,15 +4,13 @@ import Button from '@mui/material/Button';
 export const ButtonNav = styled(Button)`
 width: 100%;
 height: auto;
-border: 1px solid #015588 !important;
-box-shadow: 2px 2px 10px #015588;
 border-radius: 10px !important;
 background-color: var(--shade-1) !important;
 display: flex !important;
 justify-content: space-between !important;
 align-items: center !important;
 padding: 5px 15px 5px 5px !important;
-
+z-index: 3;
 
 .cub{
     width: 51px;
@@ -39,7 +37,7 @@ padding: 5px 15px 5px 5px !important;
 .soni{
     height: fit-content;
     text-align: center;
-    padding: 5px 1px;
+    padding: 5px 5px;
     background-color: #E0F5DA;
     color: #75D25D;
     border-radius: 5px;

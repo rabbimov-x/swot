@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@font-face {
+  font-family: CryItalic;
+  src: url(../public/assets/font/HelveticaNeueCyr-Italic.otf);
+}
+@font-face {
+  font-family: CyrMedium;
+  src: url(../public/assets/font/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+  font-family: CyrBold;
+  src: url(../public/assets/font/HelveticaNeueCyr-Bold.otf);
+}
 body {
   overflow: hidden;
   margin: 0;
@@ -75,7 +85,7 @@ text-transform: uppercase;
   --size20: 20px;
   --size24: 24px;
   --size28: 28px;
-  --size48: 48px;
+  --size48: 46px;
   --size56: 56px;
   --size64: 64px;
   /* =============  ICONS width============== */
@@ -90,9 +100,9 @@ text-transform: uppercase;
   --btn: 16px 32px;
 
   /* ========== FONT FAMILY ============= */
-  --family: "Montserrat", sans-serif;
-  --familyR: "Roboto" , sans-serif;
-  --familyQ: 'Quicksand', sans-serif;
+  --familyI: "CryItalic", sans-serif;
+  --familyR: "CyrMedium" , sans-serif;
+  --familyB: 'CyrBold', sans-serif;
   
   /* ============= DISPLAY ================== */
 }
@@ -101,13 +111,13 @@ text-transform: uppercase;
   :root {
   --size12: 16px;
   --size14: 20px;
-  --size15: 20px;
+  --size15: 18px;
   --size16: 23px;
   --size18: 24px;
   --size20: 26px;
   --size24: 30px;
   --size28: 34px;
-  --size48: 54px;
+  --size48: 50px;
   --size56: 58px;
   --size64: 66px;
   --btn: 16px 32px;
@@ -124,13 +134,13 @@ text-transform: uppercase;
   :root {
   --size12: 16px;
   --size14: 16px;
-  --size15: 19px;
+  --size15: 18px;
   --size16: 23px;
   --size18: 22px;
   --size20: 24px;
   --size24: 28px;
   --size28: 32px;
-  --size48: 52px;
+  --size48: 48px;
   --size56: 58px;
   --size64: 66px;
   /* =============  ICONS width============== */
@@ -153,7 +163,7 @@ text-transform: uppercase;
     --size20: 19px;
     --size24: 22px;
     --size28: 26px;
-    --size48: 40px;
+    --size48: 36px;
     --size56: 48px;
     --size64: 58px;
     --btn: 14px 28px;
@@ -169,7 +179,7 @@ text-transform: uppercase;
     --size20: 17px;
     --size24: 20px;
     --size28: 25px;
-    --size48: 38px;
+    --size48: 34px;
     --size56: 44px;
     --size64: 52px;
     /* =============  ICONS width============== */
@@ -191,7 +201,7 @@ text-transform: uppercase;
     --size20: 17px;
     --size24: 20px;
     --size28: 25px;
-    --size48: 38px;
+    --size48: 28px;
     --size56: 44px;
     --size64: 52px;
     /* =============  ICONS width============== */
@@ -213,7 +223,7 @@ text-transform: uppercase;
     --size20: 14px;
     --size24: 18px;
     --size28: 20px;
-    --size48: 35px;
+    --size48: 24px;
     --size56: 40px;
     --size64: 45px;
     /* =============  ICONS width============== */
@@ -236,7 +246,7 @@ text-transform: uppercase;
     --size20: 13px;
     --size24: 16px;
     --size28: 18px;
-    --size48: 24px;
+    --size48: 18px;
     --size56: 28px;
     --size64: 32px;
     /* =============  ICONS width============== */

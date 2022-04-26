@@ -54,6 +54,10 @@ Ul.Li = styled.li`
         &::before{
             width: 99%;
         }
+        &> button{
+            border: 1px solid #015588 !important; 
+            box-shadow: 2px 2px 10px #015588;
+        }
     }
 
    

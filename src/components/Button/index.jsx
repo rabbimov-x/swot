@@ -1,5 +1,5 @@
 import React from "react";
-import { Div, Icon, P } from "../../GlobalStyle";
+import { Div,  P } from "../../GlobalStyle";
 import { ButtonNav } from "./styled";
 
 
@@ -11,7 +11,12 @@ const Button = (props)=>{
                     props.children
                 }
             </div>
-            <P bold= "bold" size = "--size15"  w = "37%">SWOT</P>
+            <P fontF = "--familyB" size = "--size14"  w = "37%">
+                {
+                    props.name
+                }
+                
+                </P>
             <Div w= "fit-content" className="soni" >
                 1 350
             </Div>
