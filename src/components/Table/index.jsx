@@ -2,588 +2,564 @@ import * as React from "react"
 import {  Div, P } from "../../GlobalStyle";
 import { TableStyle, Tr } from "./styled";
 
-const Tables = ()=>{
+const Tables = (props)=>{
     return(
         <TableStyle>
             <TableStyle.Tab>
-                <thead>
+                <thead className={props.view} one = "3" two = "4" >
                     <Tr>
                         
                        <Tr.Th>
-                         №
+                     <div> <p>   №</p> </div>
+
                         </Tr.Th>
                         <Tr.Th>
-                        Вилоят номи
+                      <div> <p> Вилоят номи</p> </div>
+
                         </Tr.Th>
                         <Tr.Th>
-                        Лойиҳа 
-                        сони
+                    <div>  <p>  Лойиҳа </p>
+                    <p>сони</p>
+                     </div>
+
+                        
                         </Tr.Th>
                         <Tr.Th>
-                         <P  size  = "--size15"  bold = "bold">Лойиҳанинг</P>  
-                        <P size  = "--size15"  bold = "bold">умумий қиймати</P>
-                        <P size  = "--size13" bold = "Italic">(млн. сўмда)</P> 
+                       <div>  <P  size  = "--size15"  bold = "bold">Лойиҳанинг</P>  
+                        <P size  = "--size15"  fontF = "--familyB">умумий қиймати</P>
+                        <P size  = "--size13" fontF = "--familyI">(млн. сўмда)</P>  </div>
+
                         </Tr.Th>
                         <Tr.Th>
-                        <P  size  = "--size15"  bold = "bold">Ўз </P>  
-                        <P size  = "--size15"  bold = "bold">маблағлари </P>
-                        <P size  = "--size13" bold = "Italic">(млн. сўмда)</P> 
+                      <div>  <P  size  = "--size15" fontF = "--familyB">Ўз </P>  
+                        <P size  = "--size15"  fontF = "--familyB">маблағлари </P>
+                        <P size  = "--size13" fontF = "--familyI">(млн. сўмда)</P> 
+                        </div>
                         </Tr.Th>
                         <Tr.Th colSpan = "2" >                      
-                        <P  size  = "--size15" mr= " 0 0 5px 0" bold = "bold">Банк кредити </P>  
+                       <div> <P  size  = "--size15" mr= " 0 0 5px 0" fontF = "--familyB">Банк кредити </P>  
                         <Div pd = " 0  23% " nowrap display = "flex" align = "center" justify = "center" >
-                        <P w = "fit-content" size  = "--size13" bold = "400">сони</P> 
-                        <P w = "fit-content" mr = "0 5px 0 34%" size  = "--size13" bold = "400">сумаси</P> 
+                        <P w = "fit-content" mr = "10px 0 0 0 !important" size  = "--size13" fontF = "--familyI">сони</P> 
+                        <P w = "fit-content" mr = "10px 5px 0 34% !important" size  = "--size13" fontF = "--familyI">сумаси</P>  
                         </Div>
+                        </div>
                         </Tr.Th>
                         <Tr.Th>
-                        <P  size  = "--size15"  bold = "bold">Шундан,хорижий </P>  
-                        <P size  = "--size15"  bold = "bold">валютадаги кредитлар </P>
-                        <P size  = "--size13" bold = "Italic">(минг долл.)</P> 
+                        <div>
+                          <P  size  = "--size15"  fontF = "--familyB">Шундан,хорижий </P>  
+                          <P size  = "--size15"  fontF = "--familyB">валютадаги кредитлар </P>
+                          <P size  = "--size13" fontF = "--familyI">(минг долл.)</P> 
+                        </div>
                         </Tr.Th>
                         <Tr.Th>
-                        <P  size  = "--size15"  bold = "bold"> Хорижий </P>  
-                        <P size  = "--size15"  bold = "bold">инвестициялар</P>
-                        <P size  = "--size13" bold = "Italic">(минг долл.)</P> 
+                       <div> <P  size  = "--size15"  fontF = "--familyB"> Хорижий </P>  
+                        <P size  = "--size15"  fontF = "--familyB">инвестициялар</P>
+                        <P size  = "--size13" fontF = "--familyI">(минг долл.)</P>  </div>
+
                         </Tr.Th>
                         <Tr.Th>
-                             <P  cl = "var(--danger)"  size  = "--size15"  bold = "bold">Ишчи ўрни </P>  
-                            <P cl = "var(--danger)" size  = "--size13" bold = "Italic">(минг долл.)</P> 
+                       <div>      <P className="last"  cl = "var(--danger)"  size  = "--size15"  fontF = "--familyB">Ишчи ўрни </P>  
+                            <P cl = "var(--danger)" size  = "--size13" fontF = "--familyI">(минг долл.)</P>  </div>
+
                         </Tr.Th>
                     </Tr>
                     <Tr>
                         <Tr.Th>
-                            14
+                       <div> <p>     14 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        Жами
+                      <div>  <p> Жами </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                          1 267
+                       <div> <p>   1 267 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        32 293 682
+                       <div> <p> 32 293 682 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        10 613 681
+                      <div>  <p> 10 613 681 </p></div>
                         </Tr.Th> 
                         <Tr.Th className = "w35">
-                        1 260
+                       <div>  <p> 1 260 </p></div>
                         </Tr.Th> 
                         <Tr.Th className = "w65">
-                        18 766 306
+                      <div>  <p> 18 766 306 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        465 382
+                       <div> <p> 465 382 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        416 199
+                       <div> <p> 416 199 </p></div>
                         </Tr.Th> 
                         <Tr.Th>
-                        57 943
+                       <div> <p> 57 943 </p></div>
                         </Tr.Th> 
                     </Tr>
                 </thead>
-                <tbody>
+                <tbody className={props.view}>
+               
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Бухоро вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
                 <Tr>
                         
                         <Tr.Td>
-                            1
+                     <div> <p>      1</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         Андижон вилояти
+                     <div> <p>   Бухоро вилояти </p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         109
+                     <div> <p>   109</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         2 388 627
+                     <div> <p>   2 388 627</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         1 102 053
+                     <div>  <p>  1 102 053</p></div>
                          </Tr.Td>
                          <Tr.Td className = " w35">
-                         109
+                      <div> <p>  109</p></div>
                          </Tr.Td>
                          <Tr.Td className = "w65" >
-                         1 113 718
+                      <div>  <p> 1 113 718</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         65 673
+                      <div> <p>  65 673</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                         155 856
+                       <div> <p> 155 856</p></div>
                          </Tr.Td>
                          <Tr.Td>
-                          9 638
+                       <div> <p>  9 638</p></div>
                          </Tr.Td>
                 </Tr>
-                <Tr>
-                        
-                        <Tr.Td>
-                            1
-                         </Tr.Td>
-                         <Tr.Td>
-                         Андижон вилояти
-                         </Tr.Td>
-                         <Tr.Td>
-                         109
-                         </Tr.Td>
-                         <Tr.Td>
-                         2 388 627
-                         </Tr.Td>
-                         <Tr.Td>
-                         1 102 053
-                         </Tr.Td>
-                         <Tr.Td className = " w35">
-                         109
-                         </Tr.Td>
-                         <Tr.Td className = "w65" >
-                         1 113 718
-                         </Tr.Td>
-                         <Tr.Td>
-                         65 673
-                         </Tr.Td>
-                         <Tr.Td>
-                         155 856
-                         </Tr.Td>
-                         <Tr.Td>
-                          9 638
-                         </Tr.Td>
-                </Tr>
-                   
-                  
-                    
-                    
                 </tbody>
             </TableStyle.Tab>
         </TableStyle>
