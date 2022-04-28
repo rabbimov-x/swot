@@ -4,14 +4,13 @@ import styled from "styled-components";
 
 export const AdminStyle = styled.div`
 width: 100%;
-height: calc(100vh - 2px);
 background-color: var(--shade-5);
 
  .tableAll{
      width: 100%;
-     height: fit-content;
-     overflow-x: auto;
      position: relative;
+     height: calc(100vh - 10px);
+     overflow-y: auto;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -57,7 +56,7 @@ background-color: var(--shade-5);
     position: fixed;
     bottom: 0px;
     left: 0;
-    z-index: 3;
+    z-index: 5;
     display: flex;
     justify-content: center;
     border-radius: 10px 10px 0 0;

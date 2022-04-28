@@ -1,6 +1,6 @@
 import React from "react";
 import { AdminStyle, Top } from "./styled";
-import Tables from "../../components/Table";
+import Tables1 from "../../components/Table1";
 import { Div, Icon, P } from "../../GlobalStyle";
 import Navbar from "../../components/Navbar";
 
@@ -26,19 +26,21 @@ const Admin = (props)=>{
                    
                             
                            
-                                   <img  className="back-imag"  src="./assets/images/png/LOGO.png" alt="" /> 
+                   <img  className="back-imag"  src="./assets/images/png/LOGO.png" alt="" /> 
                  
                                 
                      
                 
                  <Navbar/>
-                <Tables view = {props.view1} />
+                <Tables1 view = {props.view1} />
                
                 
             </div>
-            <div className="bottom-view">
-                <div className="view-in"></div>
-            </div>
+            
+                <div className="bottom-view">
+                    <div className="view-in"></div>
+                </div>
+            
             </Div>
         </AdminStyle>
     )

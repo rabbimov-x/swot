@@ -51,6 +51,12 @@ overflow-y: auto;
             text-align: left;
         }
     }
+    tr:nth-child(2){
+        th{
+            background-color: var(--primary1)
+        }
+    }
+
     .brnone{
         border: none;
     }
@@ -65,10 +71,9 @@ overflow-y: auto;
         td , th{
                 color: transparent !important;
                 border: none;
-                    -webkit-user-select: none;
+                   
                 & p{
                     color: transparent !important;
-
                 }
                 
             }
@@ -84,7 +89,7 @@ overflow-y: auto;
              th:nth-child(3), td:nth-child(3){
                 width: 9.8% ;
                 position: relative;
-                -webkit-user-select: auto;
+                
                 border-right: 1px solid var(--shade-7);
                  & p, &{color: var(--info-dark) !important;}
                 &::before{
@@ -101,75 +106,7 @@ overflow-y: auto;
             }
             th:nth-child(4), td:nth-child(4){
                 width: 13%;
-                -webkit-user-select: auto;
-                 & p, &{color: var(--info-dark) !important;}
-                position: relative;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 101%;
-                    height: 100%;
-                    z-index: 3;
-                    background-color: #E8F4FF;
-                    opacity: 0.5;
-                }
-            }
-            th:nth-child(2), td:nth-child(2){
-                width: 23.6%;
-                -webkit-user-select: auto;
-                 & p, &{color: var(--info-dark) !important;}
-            }
-            th:nth-child(1), td:nth-child(1){
-                -webkit-user-select: auto;
-                & p, &{ color: var(--info-dark) !important};
-            }
-            
-        }
-    }
-
-    .ishgaTushgan{
-        td , th{
-                color: transparent !important;
-                border: none;
-                    -webkit-user-select: none;
-                & p{
-                    color: transparent !important;
-
-                }
                 
-            }
-        tr{
-            &:first-child{
-                th:nth-child(3), th:nth-child(4){
-                    &::before{
-                        top: -20px;
-                        height: calc(100% + 20px);
-                    } 
-                }
-            }
-             th:nth-child(3), td:nth-child(3){
-                width: 9.8% ;
-                position: relative;
-                -webkit-user-select: auto;
-                border-right: 1px solid var(--shade-7);
-                 & p, &{color: var(--info-dark) !important;}
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 101%;
-                    height: 100%;
-                    z-index: 3;
-                    background-color: #E8F4FF;
-                    opacity: 0.5;
-                }
-            }
-            th:nth-child(4), td:nth-child(4){
-                width: 13%;
-                -webkit-user-select: auto;
                  & p, &{color: var(--info-dark) !important;}
                 position: relative;
                 &::before{
@@ -186,84 +123,17 @@ overflow-y: auto;
             }
             th:nth-child(2), td:nth-child(2){
                 width: 23.6%;
-                -webkit-user-select: auto;
+               
                  & p, &{color: var(--info-dark) !important;}
             }
             th:nth-child(1), td:nth-child(1){
-                -webkit-user-select: auto;
-                & p, &{ color: var(--info-dark) !important};
-            }
-            
-        }
-    }
-    .ishgaTushmagan{
-        td , th{
-                color: transparent !important;
-                border: none;
-                    -webkit-user-select: none;
-                & p{
-                    color: transparent !important;
-
-                }
                 
-            }
-        tr{
-            &:first-child{
-                th:nth-child(3), th:nth-child(4){
-                    &::before{
-                        top: -20px;
-                        height: calc(100% + 20px);
-                    } 
-                }
-            }
-             th:nth-child(3), td:nth-child(3){
-                width: 9.8% ;
-                position: relative;
-                -webkit-user-select: auto;
-                border-right: 1px solid var(--shade-7);
-                 & p, &{color: var(--info-dark) !important;}
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 101%;
-                    height: 100%;
-                    z-index: 3;
-                    background-color: #E8F4FF;
-                    opacity: 0.5;
-                }
-            }
-            th:nth-child(4), td:nth-child(4){
-                width: 13%;
-                -webkit-user-select: auto;
-                 & p, &{color: var(--info-dark) !important;}
-                position: relative;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 101%;
-                    height: 100%;
-                    z-index: 3;
-                    background-color: #E8F4FF;
-                    opacity: 0.5;
-                }
-            }
-            th:nth-child(2), td:nth-child(2){
-                width: 23.6%;
-                -webkit-user-select: auto;
-                 & p, &{color: var(--info-dark) !important;}
-            }
-            th:nth-child(1), td:nth-child(1){
-                -webkit-user-select: auto;
                 & p, &{ color: var(--info-dark) !important};
             }
             
         }
     }
-    
+
    
     @media (min-width: 1800px) {
             .w35{
@@ -332,7 +202,7 @@ line-height: 110%;
      padding: 0 5px;
      p{
          margin: 0;
-         padding: 11.5px 0;
+         padding: 13px 0;
           z-index: 4;
           line-height: 110%;
      }

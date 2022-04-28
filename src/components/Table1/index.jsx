@@ -1,12 +1,13 @@
 import * as React from "react"
 import {  Div, P } from "../../GlobalStyle";
-import { TableStyle, Tr } from "./styled";
+import {Tr} from "../Table/styled"
+import { TableStyle1 } from "./styled";
 
-const Tables = ()=>{
+const Tables1 = ()=>{
     return(
-        <TableStyle>
-            <TableStyle.Tab>
-                <thead   >
+        <TableStyle1>
+            <TableStyle1.Tab>
+                <thead  >
                     <Tr>
                         
                        <Tr.Th>
@@ -561,8 +562,8 @@ const Tables = ()=>{
                          </Tr.Td>
                 </Tr>
                 </tbody>
-            </TableStyle.Tab>
-        </TableStyle>
+            </TableStyle1.Tab>
+        </TableStyle1>
     )
 }
-export default Tables;
+export default Tables1;
