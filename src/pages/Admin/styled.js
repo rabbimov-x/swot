@@ -10,8 +10,16 @@ background-color: var(--shade-5);
  .tableAll{
      width: 100%;
      height: fit-content;
-     overflow-x: auto;
-     
+     overflow-x: auto;     
+    background-image: url(assets/images/png/LOGO.png);
+    background-size: 60% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+
+
+
     @media (max-width: 800px) {
         overflow-x: auto; 
     &::-webkit-scrollbar{
@@ -31,11 +39,11 @@ background-color: var(--shade-5);
 `
 export const Top = styled.div`
 width: 100%;
-height: 70px;
 border-radius:  0 0 50px 50px;
 display: flex ;
 padding: 0 1% 15px 1%;
 text-align: center;
+text-transform: uppercase;
 background-color: var(--primary);
 color: var(--shade-1);
 .top-logo{
@@ -47,22 +55,35 @@ color: var(--shade-1);
     background-color: var(--shade-1);
     border-radius:  0 0 68px 68px;
     
-@media (max-width: 1200px) {
+}
+
+@media (max-width: 1440px) {
+    .top-logo{
     border-radius:  0 0 48px 48px;
+    padding: 13px 0;
+    height: fit-content;
+}
     
 }
 @media (max-width: 992px) {
+    .top-logo{
     border-radius:  0 0 45px 45px;
-    height: 50px;
+    }
+
+    
 }
 @media (max-width: 767px) {
+    .top-logo{
     border-radius:  0 0 38px 38px;
-    height: 40px;
+}
+    
+    
 }
 @media (max-width: 576px) {
-    border-radius:  0 0 26px 26px;
-    height: 36px;
-}
+   .top-logo{
+       height: 36px;
+       border-radius:  0 0 26px 26px;   
+    }
 }
 
 @media (max-width: 767px) {

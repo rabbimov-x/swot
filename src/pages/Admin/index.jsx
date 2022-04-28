@@ -11,7 +11,7 @@ const Admin = ()=>{
                 <div className="top-logo">
                     <Icon.Logo/>
                 </div>
-                <P bold = "bold" size= "--size16" w = "61%" mr= "0 auto" cl = "var(--shade-1)">
+                <P bold = "bold" size= "--size16" w = "61%" mr= "16px auto 0 auto" cl = "var(--shade-1)">
                 Ўзбекистон Республикаси Президентининг жойларга амалга оширган ташрифларида 
 белгиланган лойиҳалар юзасидан йиғма жадвал
                 </P>

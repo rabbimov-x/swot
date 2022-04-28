@@ -5,6 +5,7 @@ export const TableStyle = styled.div`
 width: 100%;
 height: 100vh;
 overflow-y: auto; 
+
     &::-webkit-scrollbar{
         width: 5.94px;
     }
@@ -23,7 +24,15 @@ overflow-y: auto;
     th:last-child{
         border-top-right-radius: 15px;
     }
+    th{
+        padding: 0 5px;
+    }
 }
+    tr:nth-child(2){
+        th{
+            background-color: rgba(217,234,248,100);
+        }
+    }
     tr:last-child{
         td:first-child{
             border-bottom-left-radius: 15px;
@@ -33,25 +42,21 @@ overflow-y: auto;
         }
     }
     tr{
-        td:last-child{
+        td:last-child, th:last-child{
             color: var(--danger);
             border: none;
-        }
-        th:last-child{
-            color: var(--danger);
+        }   
+        
+        th:first-child,td:first-child{
             border: none;
         }
-        td:first-child{
-            border: none;
-        }
-        th:first-child{
-            border: none;
-        }
-        th:nth-child(2){
+        td:nth-child(2),th:nth-child(2){
             text-align: left;
+            
         }
-        td:nth-child(2){
-            text-align: left;
+        td , th {
+            opacity: 0.96;
+            padding: 13px 5px;
         }
 
     }
@@ -90,8 +95,8 @@ TableStyle.Tab = styled.table`
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 4%;
+        width: 94%;
         height: 3px;
         background-color: var(--shade-1);
     }
@@ -100,13 +105,15 @@ export const Tr = styled.tr`
 /* border-bottom: 0.5px solid #A9ABBA; */
 &:nth-child(odd){
     td {
-   background-color: var(--shade-4);
+        background: rgba(248,248,248, 100);   
     }
 }
 
 &:nth-child(even){
     td {
-     background: #fff;
+        background-color: #fff;
+   opacity: 0.96;
+
     }
 }
 `
@@ -118,11 +125,11 @@ text-align: center;
 font-weight: 500;
 font-size: var(--size15);
 font-family: var(--familyR);
-border-right: 1px solid var(--shade-7);
+border-right: 1px solid rgba(228,228,228, 100);
 color: var(--info-dark)
 `
 
-Tr.Th = styled.th`
+Tr.Th = styled.th`  
 border: none;
 padding: 15px 5px;
 background-color: var(--shade-1);
@@ -131,5 +138,5 @@ font-weight: bold;
 font-family: var(--familyR);
 color: var(--info-dark);
 text-align: center;
-border-right: 1px solid var(--shade-7);
+border-right: 1px solid rgba(228,228,228, 100);
 `

@@ -23,8 +23,8 @@ padding: 5px 15px 5px 5px !important;
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 1200px) {
-        width: 40px;
+    @media (max-width: 1440px) {
+        width: 43px;
         height: 40px;
     }
     @media (max-width: 992px) {
@@ -39,7 +39,7 @@ padding: 5px 15px 5px 5px !important;
 .soni{
     height: fit-content;
     text-align: center;
-    padding: 5px 1px;
+    padding: 5px 10px;
     background-color: #E0F5DA;
     color: #75D25D;
     border-radius: 5px;
